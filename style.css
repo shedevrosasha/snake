@@ -59,7 +59,7 @@ body {
 @media screen and (max-width: 800px) {
   .container {
     width: 90vmin;
-    height: 122vmin;
+    height: 140vmin;
   }
   .controls {
     display: flex;
