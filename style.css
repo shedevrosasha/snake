@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: gray;
+}
+.container {
+  background: rgb(10, 42, 83);
+  height: 70vmin;
+  width: 65vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  color: rgb(81, 196, 167);
+  overflow: hidden;
+}
+.playboard {
+  width: 100%;
+  height: 100%;
+  background: rgb(9, 70, 9);
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.game {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 17px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.controls {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+.middlecontrols {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.head {
+  background: blue;
+}
+.food {
+  color: red;
+  font-size: 12px;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90vmin;
+    height: 122vmin;
+  }
+  .controls {
+    display: flex;
+  }
+  .controls {
+    padding: 5px 0;
+  }
+  .controls i {
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 7px;
+  }
+  .game {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
